@@ -1,3 +1,7 @@
+.wrapper {
+  background: #f8f8f8;
+}
+
 .ownDevice {
   display: grid;
   grid-template-columns: 1fr 1fr;
