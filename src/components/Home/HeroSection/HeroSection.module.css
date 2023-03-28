@@ -1,0 +1,143 @@
+.wrapper {
+  padding: 90px 0;
+  padding-top: 166px;
+  background: #0f1017;
+}
+
+.heroSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.75fr;
+  align-items: center;
+  gap: 25px;
+}
+.textContainer {
+  max-width: 636px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.secure {
+  position: relative;
+}
+.secure::before {
+  content: url("../../../images/home/secure.svg");
+  position: absolute;
+  width: 16.64px;
+  height: 8.57px;
+  top: -20%;
+  right: -8%;
+}
+.imageContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  max-width: 532px;
+}
+.buttonContainer {
+  display: flex;
+  align-content: center;
+  gap: 10px;
+  padding-top: 15px;
+}
+.button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-width: 198px;
+  outline: none;
+  padding: 10px 15px;
+}
+.activeButton {
+  background: #e14817;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+.arrow {
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 3px;
+}
+@media only screen and (max-width: 1199px) {
+  .title {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .heroSection {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+  .textContainer {
+    align-items: center;
+  }
+  .title {
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .title {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .heroSection {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+  .textContainer {
+    align-items: flex-start;
+  }
+  .title {
+    text-align: left;
+    font-size: 36px;
+  }
+  .secure::before {
+    width: 14.64px;
+    height: 7.57px;
+    top: -20%;
+    right: -8%;
+  }
+  .text {
+    text-align: left;
+  }
+  .buttonContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .title {
+    font-size: 35px;
+  }
+}

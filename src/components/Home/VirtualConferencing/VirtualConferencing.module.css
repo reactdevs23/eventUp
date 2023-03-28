@@ -1,0 +1,38 @@
+.virtualConference {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 80px 0;
+}
+
+.imageContaner {
+  width: 100%;
+  padding-top: 50px;
+}
+.image {
+  width: 100%;
+  display: block;
+}
+.textContainer {
+  max-width: 846px;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+}
+.text {
+  padding-top: 20px;
+  text-align: center;
+}
+.eventUp {
+  font-weight: 600;
+}
+@media only screen and (max-width: 520px) {
+  .virtualConference {
+    flex-direction: column-reverse;
+  }
+  .imageContaner {
+    padding-top: 0px;
+  }
+}

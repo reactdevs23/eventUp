@@ -1,0 +1,30 @@
+.wrapper {
+  background: #27282e;
+  padding: 62px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+.partnerLogo {
+  display: block;
+  max-width: 140px;
+}
+@media only screen and (max-width: 1280px) {
+  .partners {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .partners {
+    justify-content: space-between;
+  }
+}

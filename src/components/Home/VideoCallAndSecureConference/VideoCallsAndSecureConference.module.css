@@ -1,0 +1,6 @@
+.wrapper {
+  background: url("../../../images/home/videoAndConferenceMask.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

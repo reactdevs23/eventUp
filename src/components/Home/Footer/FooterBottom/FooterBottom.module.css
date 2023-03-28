@@ -1,0 +1,105 @@
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  border-top: 0.5px solid #cfcfd1;
+  padding: 40px 0;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+.socialMediaAndLanugage {
+  margin-left: auto;
+  display: flex;
+  gap: 35px;
+}
+.socialIcon {
+  font-size: 22px;
+  color: #57585d;
+}
+.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+/*  */
+.dropdown {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  border: 0.5px solid #cfcfd1;
+  border-radius: 8px;
+  padding: 9px 15px;
+  cursor: pointer;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dropDownItems {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  min-width: 100%;
+  border: 1.4px solid rgba(208, 220, 231, 1);
+
+  border-radius: 8px;
+  padding: 15px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #fff;
+}
+.dropDownItem {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #57585d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.flag {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.arrow {
+  color: #57585d;
+  font-size: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .footerBottom {
+    gap: 35px;
+    flex-direction: column-reverse;
+  }
+  .socialMediaAndLanugage {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .footerBottom {
+    gap: 35px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .socialMediaAndLanugage {
+    gap: 20px;
+  }
+
+  .socialMedia {
+    gap: 8px;
+  }
+}

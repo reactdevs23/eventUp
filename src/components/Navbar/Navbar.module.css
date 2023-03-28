@@ -1,0 +1,137 @@
+.navbarContainer {
+  width: 100%;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f1017;
+  z-index: 5;
+}
+.navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.logo {
+  width: 199px;
+  display: block;
+}
+.navItemsAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navItems {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+.navItem {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: #ffffff;
+}
+.buttonContainer {
+  display: flex;
+  align-content: center;
+  gap: 10px;
+}
+.button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  outline: none;
+  padding: 8px 25px;
+  cursor: pointer;
+}
+.activeButton {
+  background: #e14817;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+.hamburger,
+.close {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navItemsAndButton {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    transform: translateX(150%);
+    width: 250px;
+    min-height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 30px;
+    padding-left: 35px;
+    padding-top: 50px;
+    transition: 0.5s ease;
+  }
+  .sidebar {
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 16, 23, 0.9);
+
+    transform: translateX(0%);
+    transition: 0.5s ease;
+  }
+  .navItems {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .buttonContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+  .hamburger {
+    color: #fff;
+    cursor: pointer;
+    width: 32px;
+    display: block;
+  }
+  .close {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 153px;
+  }
+}
